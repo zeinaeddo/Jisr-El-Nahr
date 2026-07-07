@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="format-detection" content="telephone=no">
 <title>مطعم جسر النهر | Jisr El Nahr</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi:wght@400..700&family=Markazi+Text:wght@400..700&family=Jost:wght@300;400;500;600&family=Work+Sans:wght@300;400;500&display=swap" rel="stylesheet">
@@ -67,9 +68,12 @@
     line-height:1.7;
   }
   header .contact{
-    margin-top:26px; font-family:'Jost',sans-serif; font-size:0.85rem;
-    letter-spacing:0.08em; color:var(--paper); direction:ltr; display:inline-block;
+    margin-top:26px; font-family:'Jost',sans-serif; font-size:0.9rem; font-weight:500;
+    letter-spacing:0.08em; color:#FFFFFF; direction:ltr; display:inline-block;
     border-top:1px solid rgba(241,236,222,0.25); padding-top:16px;
+  }
+  header .contact a, footer .phones a{
+    color:inherit !important; text-decoration:none !important;
   }
 
   /* ===== sticky nav ===== */
@@ -175,7 +179,7 @@
     padding:40px 20px 30px; font-family:'Jost',sans-serif;
   }
   footer .fish-sign{width:46px; margin-bottom:14px; opacity:0.85;}
-  footer .phones{direction:ltr; font-size:1rem; letter-spacing:0.05em; color:var(--paper-light); margin-bottom:8px;}
+  footer .phones{direction:ltr; font-size:1.05rem; font-weight:500; letter-spacing:0.05em; color:#FFFFFF; margin-bottom:8px;}
   footer .small{font-size:0.75rem; letter-spacing:0.1em; text-transform:uppercase; color:var(--brass);}
 </style>
 </head>
@@ -197,20 +201,19 @@
   </div>
   <h1>مَطعَم جِسر النَهر</h1>
   <div class="subtitle-en en">Jisr El Nahr Restaurant</div>
-  <p class="tagline">مأكولات لبنانية أصيلة على ضفاف النهر — واختصاصنا سمك التروتة الطازج<br>
-  <span class="en" style="font-size:0.95rem; opacity:0.8;">Authentic Lebanese riverside dining — home of fresh trout</span></p>
+  <p class="tagline">مأكولات لبنانية أصيلة على ضفاف النهر، واختصاصنا سمك التروتة الطازج<br>
+  <span class="en" style="font-size:0.95rem; opacity:0.8;">Authentic Lebanese riverside dining, home of fresh trout</span></p>
   <div class="contact">03 987 101 · 70 288 858 · 04 288 858</div>
 </header>
 
 <nav id="siteNav">
   <a href="#salads">سلطات</a>
   <a href="#cold-mezze">مقبلات باردة</a>
-  <a href="#nayeh">النيّات</a>
-  <a href="#hommos">الحمص</a>
+  <a href="#nayeh">لحومات نية</a>
   <a href="#hot-meze">مقبلات ساخنة</a>
-  <a href="#fried">المعجنات</a>
-  <a href="#mashawi">المشاوي</a>
-  <a href="#drinks">المشروبات</a>
+  <a href="#fried">معجنات</a>
+  <a href="#mashawi">مشاوي</a>
+  <a href="#drinks">مشروبات</a>
   <a href="#mazza">مازة جماعية</a>
 </nav>
 
@@ -219,28 +222,36 @@
   <!-- المقبلات -->
   <section class="course" id="mokabbalat">
     <div class="course-head">
-      <h2>المـقـبـلات</h2>
+      <h2>مـقـبـلات</h2>
       <div class="en-label en">Appetizers</div>
     </div>
     <div class="river-divider"><svg viewBox="0 0 600 20"><path d="M0 10 Q 75 2 150 10 T 300 10 T 450 10 T 600 10" stroke="#B8894F" stroke-width="1.5" fill="none"/></svg></div>
 
     <div class="photo-feature">
-      <img src="images/mezze-table.jpg" alt="طاولة مقبلات جسر النهر" loading="lazy">
+      <img src="images/mezze-spread-big.jpg" alt="طاولة مقبلات جسر النهر" loading="lazy">
     </div>
     <div class="photo-caption en">A spread of the day's mezze</div>
 
     <div class="sub-head" id="salads">سلطات<span class="en-label en">Salads</span></div>
+    <div class="photo-grid">
+      <img class="tall" src="images/tabbouleh-close.jpg" alt="تبولة جسر النهر" loading="lazy">
+      <img src="images/fattoush-close.jpg" alt="فتوش جسر النهر" loading="lazy">
+    </div>
     <div class="grid">
       <div class="item"><span class="name">جاط خضرا<span class="en">Jat Khodra</span></span><span class="price en">15$</span></div>
       <div class="item"><span class="name">تبولة<span class="en">Tabbouleh</span></span><span class="price en">10$</span></div>
       <div class="item"><span class="name">فتوش<span class="en">Fattouch</span></span><span class="price en">10$</span></div>
-      <div class="item"><span class="name">حشائش (زعتر، روكا، بقلة، شمندر و بصل)<span class="en">Hachayech — wild greens, arugula, purslane, beet & onion</span></span><span class="price en">10$</span></div>
+      <div class="item"><span class="name">حشائش (زعتر، روكا، بقلة، شمندر و بصل)<span class="en">Hachayech, wild greens, arugula, purslane, beet & onion</span></span><span class="price en">10$</span></div>
       <div class="item"><span class="name">سلطة الراهب<span class="en">Salad Raheb</span></span><span class="price en">10$</span></div>
       <div class="item"><span class="name">كبيس زيتون<span class="en">Kabbis Zaytoun</span></span><span class="price en">3$</span></div>
       <div class="item"><span class="name">بندورة جسر النهر<span class="en">Tomato Jisr El Nahr</span></span><span class="price en">5$</span></div>
     </div>
 
     <div class="sub-head" id="cold-mezze">مقبلات باردة<span class="en-label en">Cold mezze</span></div>
+    <div class="photo-grid">
+      <img class="tall" src="images/hommos-mint-close.jpg" alt="حمص جسر النهر" loading="lazy">
+      <img src="images/loubieh-bzeit-close.jpg" alt="لوبيه بزيت جسر النهر" loading="lazy">
+    </div>
     <div class="grid">
       <div class="item"><span class="name">حمّص<span class="en">Hommos</span></span><span class="price en">6$</span></div>
       <div class="item"><span class="name">حرّة<span class="en">Harra</span></span><span class="price en">5$</span></div>
@@ -256,48 +267,45 @@
       <div class="item"><span class="name">جبنة بلدي<span class="en">Jebneh Baladiyeh</span></span><span class="price en">5$</span></div>
       <div class="item"><span class="name">لوبيه بزيت<span class="en">Loubieh B Zeit</span></span><span class="price en">5$</span></div>
       <div class="item"><span class="name">طاجن<span class="en">Tajen</span></span><span class="price en">5$</span></div>
+      <div class="item"><span class="name">حمّص بليلة<span class="en">Hommos Balila</span></span><span class="price en">10$</span></div>
+      <div class="item"><span class="name">حمّص بالصنوبر<span class="en">Hommos Bel Snoubar</span></span><span class="price en">12$</span></div>
+      <div class="item"><span class="name">حمّص بلحمة (مع صنوبر)<span class="en">Hommos B Lahmeh</span></span><span class="price en">14$</span></div>
+      <div class="item"><span class="name">حمّص بالقورما<span class="en">Hommos Bel Kawerma</span></span><span class="price en">12$</span></div>
     </div>
   </section>
 
   <!-- النيّات -->
   <section class="course" id="nayeh">
-    <div class="course-head"><h2>النـيّـات</h2><div class="en-label en">Raw meat mezze</div></div>
+    <div class="course-head"><h2>لحومات نية</h2><div class="en-label en">Raw meat mezze</div></div>
     <div class="river-divider"><svg viewBox="0 0 600 20"><path d="M0 10 Q 75 18 150 10 T 300 10 T 450 10 T 600 10" stroke="#A63A2E" stroke-width="1.5" fill="none"/></svg></div>
+    <div class="photo-feature">
+      <img src="images/raw-meat-board.jpg" alt="لحومات نية جسر النهر" loading="lazy">
+    </div>
+    <div class="photo-caption en">Kibbe, kafta & lahme, nayeh style</div>
     <div class="grid">
       <div class="item"><span class="name">سودا نية<span class="en">Sawda Nayeh</span></span><span class="price en">15$</span></div>
       <div class="item"><span class="name">كبة نية<span class="en">Kibbe Nayeh</span></span><span class="price en">15$</span></div>
       <div class="item"><span class="name">فتيلة نية<span class="en">Ftileh Nayeh</span></span><span class="price en">15$</span></div>
       <div class="item"><span class="name">كفتة نية<span class="en">Kafta Nayeh</span></span><span class="price en">15$</span></div>
       <div class="item"><span class="name">تابلة نية<span class="en">Tableh Nayeh</span></span><span class="price en">15$</span></div>
-      <div class="item"><span class="name">خشبة نية<span class="en">Khachbeh Nayeh — mixed raw platter</span></span><span class="price en">45$</span></div>
-    </div>
-  </section>
-
-  <!-- الحمص وبيض -->
-  <section class="course" id="hommos">
-    <div class="course-head"><h2>الحـمّـص والبيض</h2><div class="en-label en">Hommos & Eggs</div></div>
-    <div class="river-divider"><svg viewBox="0 0 600 20"><path d="M0 10 Q 75 2 150 10 T 300 10 T 450 10 T 600 10" stroke="#B8894F" stroke-width="1.5" fill="none"/></svg></div>
-    <div class="grid">
-      <div class="item"><span class="name">حمّص بليلة<span class="en">Hommos Balila</span></span><span class="price en">10$</span></div>
-      <div class="item"><span class="name">حمّص بالصنوبر<span class="en">Hommos Bel Snoubar</span></span><span class="price en">12$</span></div>
-      <div class="item"><span class="name">حمّص بلحمة (مع صنوبر)<span class="en">Hommos B Lahmeh</span></span><span class="price en">14$</span></div>
-      <div class="item"><span class="name">حمّص بالقورما<span class="en">Hommos Bel Kawerma</span></span><span class="price en">12$</span></div>
-      <div class="item"><span class="name">بيض بالقورما<span class="en">Kawerma W Bayd</span></span><span class="price en">12$</span></div>
-      <div class="item"><span class="name">عصافير (حبة)<span class="en">Asafir (per piece)</span></span><span class="price en">3$</span></div>
+      <div class="item"><span class="name">خشبة نية<span class="en">Khachbeh Nayeh, mixed raw platter</span></span><span class="price en">45$</span></div>
     </div>
   </section>
 
   <div style="max-width:620px; margin:0 auto;">
     <div class="photo-feature">
-      <img src="images/riverside-table.jpg" alt="طاولة فواكه وحلويات على النهر" loading="lazy">
+      <img src="images/forest-table-spread.jpg" alt="طاولة جسر النهر بين الأشجار" loading="lazy">
     </div>
-    <div class="photo-caption en">Fruit, sweets & good company by the river</div>
+    <div class="photo-caption en">Lunch under the trees at Jisr El Nahr</div>
   </div>
 
   <!-- مقبلات ساخنة -->
   <section class="course" id="hot-meze">
     <div class="course-head"><h2>مقبلات ساخنة</h2><div class="en-label en">Hot mezze</div></div>
     <div class="river-divider"><svg viewBox="0 0 600 20"><path d="M0 10 Q 75 18 150 10 T 300 10 T 450 10 T 600 10" stroke="#5C7A5A" stroke-width="1.5" fill="none"/></svg></div>
+    <div class="photo-feature">
+      <img src="images/mezze-tomato-feta.jpg" alt="مقبلات جسر النهر" loading="lazy">
+    </div>
     <div class="grid">
       <div class="item"><span class="name">مقانق<span class="en">Makanek</span></span><span class="price en">12$</span></div>
       <div class="item"><span class="name">سجق<span class="en">Soujouk</span></span><span class="price en">12$</span></div>
@@ -305,12 +313,14 @@
       <div class="item"><span class="name">بيض غنم<span class="en">Bayd Ghanam</span></span><span class="price en">12$</span></div>
       <div class="item"><span class="name">لحمة راس عصفور (مع صنوبر)<span class="en">Ras Asfour</span></span><span class="price en">15$</span></div>
       <div class="item"><span class="name">عرايس كفتة<span class="en">Araayes Kafta</span></span><span class="price en">10$</span></div>
+      <div class="item"><span class="name">بيض بالقورما<span class="en">Kawerma W Bayd</span></span><span class="price en">12$</span></div>
+      <div class="item"><span class="name">عصافير (حبة)<span class="en">Asafir (per piece)</span></span><span class="price en">3$</span></div>
     </div>
   </section>
 
   <!-- المعجنات والمقالي -->
   <section class="course" id="fried">
-    <div class="course-head"><h2>المعجنات والمقالي</h2><div class="en-label en">Pastries & Fried</div></div>
+    <div class="course-head"><h2>معجنات ومقالي</h2><div class="en-label en">Pastries & Fried</div></div>
     <div class="river-divider"><svg viewBox="0 0 600 20"><path d="M0 10 Q 75 2 150 10 T 300 10 T 450 10 T 600 10" stroke="#B8894F" stroke-width="1.5" fill="none"/></svg></div>
     <div class="photo-feature">
       <img src="images/fried-fish.jpg" alt="سمك مقلي ورقاقات جسر النهر" loading="lazy">
@@ -333,11 +343,11 @@
 
   <!-- المشاوي -->
   <section class="course" id="mashawi">
-    <div class="course-head"><h2>الـمـشـاوي</h2><div class="en-label en">Grills & Fish</div></div>
+    <div class="course-head"><h2>مـشـاوي</h2><div class="en-label en">Grills & Fish</div></div>
     <div class="river-divider"><svg viewBox="0 0 600 20"><path d="M0 10 Q 75 18 150 10 T 300 10 T 450 10 T 600 10" stroke="#A63A2E" stroke-width="1.5" fill="none"/></svg></div>
     <div class="photo-grid">
       <img class="tall" src="images/mixed-spread.jpg" alt="مشاوي وسمك جسر النهر" loading="lazy">
-      <img src="images/mixed-grill.jpg" alt="مشاوي مشكلة جسر النهر" loading="lazy">
+      <img src="images/mixed-grill-wrap.jpg" alt="مشاوي مشكلة جسر النهر" loading="lazy">
     </div>
     <div class="grid">
       <div class="item"><span class="name">لحمة مشوية (عدد ٢)<span class="en">Shish Lahme (2 pcs)</span></span><span class="price en">14$</span></div>
@@ -352,20 +362,21 @@
       <div class="item"><span class="name">كيلو طاووق مشوي (عدد ٩)<span class="en">Kilo Shish Tawook (9 pcs)</span></span><span class="price en">45$</span></div>
       <div class="item"><span class="name">كيلو مشاوي مشكل (٤ كفتة، ٢ لحمة، ٤ طاووق)<span class="en">Kilo Mashewe Mchakal, mixed grill</span></span><span class="price en">50$</span></div>
     </div>
-    <div class="sub-head">سمك — اختصاص المطعم<span class="en-label en">Fish — house specialty</span></div>
-    <div class="photo-feature">
-      <img src="images/grilled-fish.jpg" alt="سمك تروتة مشوي جسر النهر" loading="lazy">
+    <div class="sub-head">سمك، اختصاص المطعم<span class="en-label en">Fish, house specialty</span></div>
+    <div class="photo-grid">
+      <img class="tall" src="images/grilled-fish.jpg" alt="سمك تروتة مشوي جسر النهر" loading="lazy">
+      <img src="images/fried-trout-close.jpg" alt="سمك تروتة مقلي جسر النهر" loading="lazy">
     </div>
-    <div class="photo-caption en">Trout, straight off the grill</div>
+    <div class="photo-caption en">Trout, grilled or fried, straight from the river</div>
     <div class="grid">
-      <div class="item"><span class="name">كيلو سمك مشوي جسر النهر<span class="en">Kilo Samak Meshwe — grilled trout</span></span><span class="price en">40$</span></div>
-      <div class="item"><span class="name">كيلو سمك مقلي<span class="en">Kilo Samak Mekleh — fried trout</span></span><span class="price en">35$</span></div>
+      <div class="item"><span class="name">كيلو سمك مشوي جسر النهر<span class="en">Kilo Samak Meshwe, grilled trout</span></span><span class="price en">40$</span></div>
+      <div class="item"><span class="name">كيلو سمك مقلي<span class="en">Kilo Samak Mekleh, fried trout</span></span><span class="price en">35$</span></div>
     </div>
   </section>
 
   <!-- المشروبات -->
   <section class="course" id="drinks">
-    <div class="course-head"><h2>الـمـشـروبات</h2><div class="en-label en">Drinks</div></div>
+    <div class="course-head"><h2>مـشـروبات</h2><div class="en-label en">Drinks</div></div>
     <div class="river-divider"><svg viewBox="0 0 600 20"><path d="M0 10 Q 75 2 150 10 T 300 10 T 450 10 T 600 10" stroke="#B8894F" stroke-width="1.5" fill="none"/></svg></div>
     <div class="photo-feature">
       <img src="images/arak-fountain.jpg" alt="عرق وقهوة جسر النهر" loading="lazy">
@@ -374,27 +385,27 @@
 
     <div class="sub-head">ويسكي<span class="en-label en">Whiskey</span></div>
     <div class="grid">
-      <div class="item"><span class="name">كاس ويسكي<span class="en">Whiskey — glass</span></span><span class="price en">9$</span></div>
-      <div class="item"><span class="name">ويسكي عادي قنينة<span class="en">Whiskey Regular — bottle</span></span><span class="price en">60$</span></div>
-      <div class="item"><span class="name">ويسكي عادي نصف قنينة<span class="en">Whiskey Regular — half bottle</span></span><span class="price en">35$</span></div>
-      <div class="item"><span class="name">ويسكي بلاك قنينة<span class="en">Whiskey Black — bottle</span></span><span class="price en">90$</span></div>
-      <div class="item"><span class="name">ويسكي بلاك نصف قنينة<span class="en">Whiskey Black — half bottle</span></span><span class="price en">50$</span></div>
+      <div class="item"><span class="name">كاس ويسكي<span class="en">Whiskey, glass</span></span><span class="price en">9$</span></div>
+      <div class="item"><span class="name">ويسكي عادي قنينة<span class="en">Whiskey Regular, bottle</span></span><span class="price en">60$</span></div>
+      <div class="item"><span class="name">ويسكي عادي نصف قنينة<span class="en">Whiskey Regular, half bottle</span></span><span class="price en">35$</span></div>
+      <div class="item"><span class="name">ويسكي بلاك قنينة<span class="en">Whiskey Black, bottle</span></span><span class="price en">90$</span></div>
+      <div class="item"><span class="name">ويسكي بلاك نصف قنينة<span class="en">Whiskey Black, half bottle</span></span><span class="price en">50$</span></div>
     </div>
 
     <div class="sub-head">عرق<span class="en-label en">Arak</span></div>
     <div class="grid">
-      <div class="item"><span class="name">عرق إكسترا قنينة (بران، كسارة، مسايا، فقرا)<span class="en">Arak Extra — bottle</span></span><span class="price en">25$</span></div>
-      <div class="item"><span class="name">عرق إكسترا نصف قنينة<span class="en">Arak Extra — half bottle</span></span><span class="price en">20$</span></div>
-      <div class="item"><span class="name">عرق إكسترا بطحة<span class="en">Arak Extra — batha</span></span><span class="price en">12$</span></div>
-      <div class="item"><span class="name">عرق بلدي قنينة<span class="en">Arak Baladi — bottle</span></span><span class="price en">15$</span></div>
-      <div class="item"><span class="name">عرق بلدي نصف قنينة<span class="en">Arak Baladi — half bottle</span></span><span class="price en">12$</span></div>
-      <div class="item"><span class="name">عرق بلدي بطحة<span class="en">Arak Baladi — batha</span></span><span class="price en">10$</span></div>
+      <div class="item"><span class="name">عرق إكسترا قنينة (بران، كسارة، مسايا، فقرا)<span class="en">Arak Extra, bottle</span></span><span class="price en">25$</span></div>
+      <div class="item"><span class="name">عرق إكسترا نصف قنينة<span class="en">Arak Extra, half bottle</span></span><span class="price en">20$</span></div>
+      <div class="item"><span class="name">عرق إكسترا بطحة<span class="en">Arak Extra, batha</span></span><span class="price en">12$</span></div>
+      <div class="item"><span class="name">عرق بلدي قنينة<span class="en">Arak Baladi, bottle</span></span><span class="price en">15$</span></div>
+      <div class="item"><span class="name">عرق بلدي نصف قنينة<span class="en">Arak Baladi, half bottle</span></span><span class="price en">12$</span></div>
+      <div class="item"><span class="name">عرق بلدي بطحة<span class="en">Arak Baladi, batha</span></span><span class="price en">10$</span></div>
     </div>
 
     <div class="sub-head">نبيذ<span class="en-label en">Wine</span></div>
     <div class="grid">
-      <div class="item"><span class="name">نبيذ قنينة (روزيه، أحمر، أبيض)<span class="en">Lebanese Wine — bottle</span></span><span class="price en">20$</span></div>
-      <div class="item"><span class="name">نبيذ نصف قنينة<span class="en">Lebanese Wine — half bottle</span></span><span class="price en">15$</span></div>
+      <div class="item"><span class="name">نبيذ قنينة (روزيه، أحمر، أبيض)<span class="en">Lebanese Wine, bottle</span></span><span class="price en">20$</span></div>
+      <div class="item"><span class="name">نبيذ نصف قنينة<span class="en">Lebanese Wine, half bottle</span></span><span class="price en">15$</span></div>
     </div>
 
     <div class="sub-head">مرطبات<span class="en-label en">Soft drinks</span></div>
@@ -415,11 +426,12 @@
 
   <!-- مازة جماعية -->
   <section class="course" id="mazza">
-    <div class="course-head"><h2>مازة ٤ أشخاص وما فوق</h2><div class="en-label en">Group set menu — 4 people & up</div></div>
+    <div class="course-head"><h2>مازة ٤ أشخاص وما فوق</h2><div class="en-label en">Group set menu, 4 people & up</div></div>
     <div class="river-divider"><svg viewBox="0 0 600 20"><path d="M0 10 Q 75 18 150 10 T 300 10 T 450 10 T 600 10" stroke="#5C7A5A" stroke-width="1.5" fill="none"/></svg></div>
 
-    <div class="photo-feature">
-      <img src="images/riverside-table.jpg" alt="طاولة فواكه وحلويات على النهر" loading="lazy">
+    <div class="photo-grid">
+      <img class="tall" src="images/blue-cloth-spread.jpg" alt="مازة جسر النهر" loading="lazy">
+      <img src="images/watermelon-phone.jpg" alt="بطيخ جسر النهر" loading="lazy">
     </div>
     <div class="photo-caption en">Every formula ends with fruit, coffee & sweets by the river</div>
 
@@ -455,10 +467,11 @@
     <h2>على ضفاف النهر</h2>
     <div class="en-label en">On the riverbank</div>
   </div>
-  <div class="photo-feature" style="max-width:620px; margin:20px auto 0;">
+  <div class="ambience-grid">
+    <img src="images/aerial-view.jpg" alt="جسر النهر من الأعلى" loading="lazy">
     <img src="images/waterfall.jpg" alt="شلال جسر النهر" loading="lazy">
   </div>
-  <div class="photo-caption en">The waterfall behind the restaurant</div>
+  <div class="photo-caption en">Jisr El Nahr from above, and the waterfall behind it</div>
 </section>
 
 <footer>
